@@ -1,0 +1,191 @@
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --primary-color: #FFFFFF;
+    --secondary-color: #2196F3;
+    --primary-bgc: #2F303A;
+    --secondary-bgc: #F5F4FA;
+}
+body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        background-color: var(--primary-color);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Стили шапки */
+
+.logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--secondary-color);
+}
+.logo-end {
+        color: #000000;
+}
+.nav-links .link {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+}
+.nav-links .link:hover,
+.nav-links .link:focus,
+.nav-links .link.link-active {
+        color: var(--secondary-color);
+}
+.contacts .link {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+        color: var(--secondary-color);
+}
+
+/* Стили героя */
+
+.hero {
+        background-color: var(--primary-bgc);
+}
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primary-color);
+}
+.btn-order {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        cursor: pointer;
+}
+
+.btn-order:hover, .brn-order:focus {
+        background-color: #188CE8;
+}
+
+/* Стили особенностей работы */
+
+.feature-card {
+        text-align: left;
+}
+.feature-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+}
+.title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: var(--secondary-text-color);
+}
+
+/* Стили команды */
+
+.our-team {
+        background-color: var(--secondary-bgc);
+}
+/* .team-card {
+            width: 270px;
+            height: 368px;
+            background: var(--primary-color);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+} */
+
+.name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        color: var(--secondary-text-color);
+}
+.position {
+        font-size: 16px;
+        line-height: 1.19;
+}
+
+/* Стили подвала */
+
+.page-footer {
+        background-color: var(--primary-bgc);
+}
+.logo-endfoot {
+        color: var(--primary-color);
+}
+.contacts-foot {
+        font-style: normal;
+}
+.contact-first {
+        color: var(--primary-color);
+}
+.contacts-foot .link {
+        color: rgba(255, 255, 255, 0.6);
+}
+.contacts-foot .link:hover,
+.contacts-foot .link:focus {
+        color: var(--secondary-color);
+}
+
+/* Стили портфолио */
+
+
+
+/* Стили фильтров */
+
+.btn {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        cursor: pointer;
+        color: var(--secondary-text-color);
+        background-color: var(--secondary-bgc);
+}
+.btn:active, .btn:hover, .btn:focus {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+}
+
+/* Стили проектов */
+
+.projects {
+        text-align: left;
+        background-color: var(--primary-color);
+}
+.projects a {
+        font-size: 16px;
+        line-height: 1.88;
+        color: var(--primary-text-color);
+}
+.project-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color: var(--secondary-text-color);
+}
