@@ -18,21 +18,15 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-h1 {
-        margin: 0;
-}
-
-h2 {
-        margin: 0;
-}
-
-p {
+h1, h2, h3, p {
         margin: 0;
 }
 
@@ -144,7 +138,6 @@ p {
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        
 }
 
 .btn-order {
@@ -163,56 +156,107 @@ p {
         cursor: pointer;
 }
 
-.btn-order:hover, .brn-order:focus {
+.btn-order:hover, .btn-order:focus {
         background-color: #188CE8;
 }
 
 /* Стили особенностей работы */
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+.feature {
+        display: flex;
+        margin: 94px 0;
+}
+
+.feature .feature-card + .feature-card {
+        margin-left: 30px;
+}
 
 .feature-card {
         text-align: left;
 }
 
 .feature-title {
+        margin-bottom: 10px;
+
+        color: var(--secondary-text-color);
+
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
-        color: var(--secondary-text-color);
 }
 
 .title {
+        margin-bottom: 50px;
+
+        color: var(--secondary-text-color);
+
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
-        color: var(--secondary-text-color);
+}
+
+/* Стили деятельности */
+
+.activity {
+        display: flex;
+        margin-bottom: 94px;
+}
+
+.activity .item + .item {
+        margin-left: 30px;
 }
 
 /* Стили команды */
+
+.team-title {
+        padding-top: 94px;
+}
 
 .our-team {
         background-color: var(--secondary-bgc);
 }
 
-/* .team-card {
-            width: 270px;
-            height: 368px;
-            background: var(--primary-color);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 0px 0px 4px 4px;
-} */
+.team {
+        display: flex;
+        padding-bottom: 94px;
+}
+
+.team .team-card + .team-card {
+        margin-left: 30px;
+}
 
 .name {
+        margin: 30px 0 10px 0;
+
+        color: var(--secondary-text-color);
+
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-        color: var(--secondary-text-color);
+        text-align: center;
 }
 
 .position {
+        margin-bottom: 30px;
+
         font-size: 16px;
         line-height: 1.19;
+        text-align: center;
 }
 
 /* Стили подвала */
@@ -239,13 +283,17 @@ p {
 }
 
 .contacts-foot {
-        font-style: normal;
-        padding-left: 0;
         padding-bottom: 60px;
+
+        font-style: normal;
 }
 
 .contact-first {
         color: var(--primary-color);
+}
+
+.contacts-foot .item + .item {
+        margin-top: 9px;
 }
 
 .contacts-foot .link {
