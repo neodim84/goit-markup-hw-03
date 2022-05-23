@@ -39,7 +39,7 @@ h1, h2, h3, p {
 /* Стили шапки */
 
 .logo {
-        margin-right: 50px;
+        margin-right: 93px;
 
         color: var(--secondary-color);
 
@@ -47,6 +47,7 @@ h1, h2, h3, p {
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
+        word-spacing: -0.24em;
 }
 
 .logo-end {
@@ -64,8 +65,7 @@ h1, h2, h3, p {
 
 .nav-links .link {
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 32px 0;
 
         color: var(--secondary-text-color);
 
@@ -116,23 +116,19 @@ h1, h2, h3, p {
 }
 
 .page-header {
-        border: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
 }
 
 /* Стили героя */
 
-.section {
-        padding: 94px 0 94px 0;
-}
-
 .hero {
+        padding: 200px 0;
         text-align: center;
 
         background-color: var(--primary-bgc);
 }
 
 .hero-title {
-        padding-top: 106px;
         margin-bottom: 30px;
 
         color: var(--primary-color);
@@ -146,11 +142,13 @@ h1, h2, h3, p {
 
 .btn-order {
         padding: 10px 32px;
-        margin-bottom: 106px;
 
         color: var(--primary-color);
         background-color: var(--secondary-color);
+        border: none;
+        border-radius: 4px;
         
+        font-family: inherit;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -164,6 +162,10 @@ h1, h2, h3, p {
 }
 
 /* Стили особенностей работы */
+
+.section {
+        padding: 94px 0;
+}
 
 .visually-hidden {
         position: absolute;
@@ -245,6 +247,7 @@ h1, h2, h3, p {
 }
 
 .team-card {
+        border-radius: 0px 0px 4px 4px;
         background-color: var(--primary-color);
 }
 
@@ -274,12 +277,12 @@ h1, h2, h3, p {
 /* Стили подвала */
 
 .page-footer {
+        padding: 60px 0;
         background-color: var(--primary-bgc);
 }
 
 .logo-foot {
         display: block;
-        padding-top: 60px;
         margin-bottom: 20px;
 
         color: var(--secondary-color);
@@ -288,6 +291,7 @@ h1, h2, h3, p {
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
+        word-spacing: -0.24em;
 }
 
 .logo-endfoot {
@@ -295,8 +299,6 @@ h1, h2, h3, p {
 }
 
 .contacts-foot {
-        padding-bottom: 60px;
-
         font-style: normal;
 }
 
@@ -336,7 +338,10 @@ h1, h2, h3, p {
         padding: 6px 22px;
         color: var(--secondary-text-color);
         background-color: var(--secondary-bgc);
+        border: none;
+        border-radius: 4px;
         
+        font-family: inherit;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
@@ -373,16 +378,22 @@ h1, h2, h3, p {
 }
 
 .project-card {
-        border-bottom: 1px solid #EEEEEE;
+        
 }
 
 .project-img {
         display: block;
 }
 
+.project-text {
+        padding: 20px 24px;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+}
+
 .project-title {
-        margin: 20px 0 4px 0;
-        padding-left: 24px;
+        margin-bottom: 4px;
 
         color: var(--secondary-text-color);
 
@@ -393,8 +404,6 @@ h1, h2, h3, p {
 }
 
 .project-desc {
-        padding: 0 0 24px 20px;
-
         color: var(--primary-text-color);
         
         font-size: 16px;
