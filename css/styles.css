@@ -203,6 +203,10 @@ h1, h2, h3, p {
         text-transform: uppercase;
 }
 
+.feature-text {
+        width: 270px;
+}
+
 .title {
         margin-bottom: 50px;
 
